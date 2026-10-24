@@ -13,7 +13,7 @@
 
 body {
   min-width: 320px;
-  background: #a3a33d;
+  background: #f8f8f6;
   color: #0b0b0b;
 }
 
@@ -30,12 +30,13 @@ textarea {
 
 .site-shell {
   min-height: 100vh;
+  position: relative;
 }
 
 .sidebar {
   position: fixed;
   inset: 0 auto 0 0;
-  z-index: 10;
+  z-index: 20;
   display: flex;
   width: 284px;
   flex-direction: column;
@@ -43,6 +44,17 @@ textarea {
   border-right: 1px solid #dededb;
   background: #fff;
   padding: 34px 30px 28px;
+}
+
+/* Wandering Dots Canvas along the divider line */
+#line-particles {
+  position: fixed;
+  top: 0;
+  left: 234px;
+  width: 100px;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 10;
 }
 
 .brand {
@@ -164,7 +176,8 @@ nav a:hover {
   border: 1px solid #dededb;
   border-radius: 50%;
   font-weight: 600;
-  font-size: 11px;
+  font-size: 13px;
+  transition: background 180ms ease, color 180ms ease;
 }
 
 .socials a:hover {
@@ -214,7 +227,7 @@ main {
 }
 
 .hero-content {
-  max-width: 800px;
+  max-width: 860px;
   padding: 60px 0;
 }
 
@@ -225,17 +238,36 @@ main {
   text-transform: uppercase;
 }
 
+/* Flex wrapper placing the animated SVG beside the text */
+.hero-headline-wrap {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
 h1 {
-  font-size: 56px;
+  font-size: 54px;
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.04em;
+  flex: 1;
 }
 
 h1 em {
   font-family: Georgia, serif;
   font-weight: 400;
   color: #666;
+}
+
+.hero-morph-art {
+  flex-shrink: 0;
+  color: #0b0b0b;
+  display: grid;
+  place-items: center;
+}
+
+.hero-morph-art polygon {
+  filter: url(#displacementFilter);
 }
 
 .hero-copy {
@@ -600,6 +632,7 @@ form textarea:focus {
   color: #888;
 }
 
+/* Dark Mode Overrides */
 html[data-theme="dark"] {
   background: #0f0f0f;
   color: #f4f4f2;
@@ -609,6 +642,10 @@ html[data-theme="dark"] body,
 html[data-theme="dark"] .hero {
   background: #0f0f0f;
   color: #f4f4f2;
+}
+
+html[data-theme="dark"] .hero-morph-art {
+  color: #f4f4f2; /* Adapts SVG fill to white in dark mode */
 }
 
 html[data-theme="dark"] .sidebar,
@@ -666,6 +703,15 @@ html[data-theme="dark"] .theme-toggle {
   color: #ddd;
 }
 
+html[data-theme="dark"] .socials a {
+  border-color: #333;
+}
+
+html[data-theme="dark"] .socials a:hover {
+  background: #f4f4f2;
+  color: #0b0b0b;
+}
+
 html[data-theme="dark"] nav a {
   border-color: #262626;
   color: #888;
@@ -675,7 +721,11 @@ html[data-theme="dark"] nav a:hover {
   color: #fff;
 }
 
+/* Responsive adjustments */
 @media (max-width: 860px) {
+  #line-particles {
+    display: none;
+  }
   .sidebar {
     position: relative;
     width: 100%;
@@ -683,6 +733,11 @@ html[data-theme="dark"] nav a:hover {
   }
   main {
     margin-left: 0;
+  }
+  .hero-headline-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
   }
   .education-grid,
   .contact-section {

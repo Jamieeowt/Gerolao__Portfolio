@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jaime Gerolao III | Web Developer Portfolio</title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
 
-    <!-- External CSS -->
+    <!-- Linked External Stylesheet -->
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -79,20 +79,48 @@
           </div>
         </aside>
 
+        <!-- Canvas for the wandering dots animation along the divider line -->
+        <canvas id="line-particles"></canvas>
+
         <main>
           <section class="hero" id="about">
             <div class="hero-topline">
               <span>Portfolio / 2026</span>
-              <span class="availability"
-                ><i></i>Available for opportunities</span
-              >
+              <span class="availability"><i></i>Available for opportunities</span>
             </div>
             <div class="hero-content">
               <p class="overline">Hello, I am Jaime, An Aspiring</p>
-              <h1>
-                Web developer building <em>clean, purposeful</em> digital
-                experiences.
-              </h1>
+              
+              <!-- Hero Header Flex Container with Animated SVG beside the text -->
+              <div class="hero-headline-wrap">
+                <h1>
+                  Web developer building <em>clean, purposeful</em> digital experiences.
+                </h1>
+                <div class="hero-morph-art">
+                  <svg width="110" height="110" viewBox="0 0 128 128">
+                    <filter id="displacementFilter">
+                      <feTurbulence
+                        type="turbulence"
+                        numOctaves="2"
+                        baseFrequency="0"
+                        result="turbulence"
+                      />
+                      <feDisplacementMap
+                        in2="turbulence"
+                        in="SourceGraphic"
+                        scale="1"
+                        xChannelSelector="R"
+                        yChannelSelector="G"
+                      />
+                    </filter>
+                    <polygon
+                      points="64 128 8.574 96 8.574 32 64 0 119.426 32 119.426 96"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </div>
+
               <p class="hero-copy">
                 Motivated individual looking to apply technical skills in a
                 challenging environment. Quick learner with a passion for web
@@ -100,9 +128,7 @@
               </p>
               <div class="hero-actions">
                 <a class="button button-dark" href="#contact">Contact me</a>
-                <a class="button button-light" href="#certificates"
-                  >Explore credentials</a
-                >
+                <a class="button button-light" href="#certificates">Explore credentials</a>
               </div>
             </div>
             <div class="quick-facts">
@@ -123,25 +149,22 @@
               <article class="education-card">
                 <p class="meta">Bachelors Degree</p>
                 <h3>Bachelor of Science in Information Technology</h3>
-                <p class="institution">
-                  Polytechnic University of the Philippines
-                </p>
+                <p class="institution">Polytechnic University of the Philippines</p>
                 <div class="date">2024 — Present</div>
               </article>
               <div class="skills-panel">
                 <div class="skill-group">
                   <p>Technical Toolkit</p>
                   <div class="pills">
-                    <span>HTML / CSS</span><span>JavaScript</span
-                    ><span>React</span><span>Java</span><span>C</span
-                    ><span>SQL</span><span>Git</span>
+                    <span>HTML / CSS</span><span>JavaScript</span><span>React</span
+                    ><span>Java</span><span>C</span><span>SQL</span><span>Git</span>
                   </div>
                 </div>
                 <div class="skill-group">
                   <p>Core Strengths</p>
                   <div class="pills light">
-                    <span>Communication</span><span>Problem Solving</span
-                    ><span>Collaboration</span><span>Quick Learner</span>
+                    <span>Communication</span><span>Problem Solving</span><span>Collaboration</span
+                    ><span>Quick Learner</span>
                   </div>
                 </div>
               </div>
@@ -177,8 +200,7 @@
                   <div class="credential-meta">
                     <div><span>Issued</span><strong>Oct 2026</strong></div>
                     <div>
-                      <span>Credential ID</span
-                      ><strong>AIEDA0016110188487</strong>
+                      <span>Credential ID</span><strong>AIEDA0016110188487</strong>
                     </div>
                   </div>
                 </div>
@@ -339,10 +361,7 @@
                   ><span><small>Phone</small>+63 964 761 7454</span></a
                 >
                 <div>
-                  <span
-                    ><small>Location</small>25 Kalayaan B, Batasan Hills,
-                    QC</span
-                  >
+                  <span><small>Location</small>25 Kalayaan B, Batasan Hills, QC</span>
                 </div>
               </div>
             </div>
@@ -387,7 +406,7 @@
                 id="form-status"
                 style="
                   margin-top: 12px;
-                  font-family: &quot;DM Mono&quot;, monospace;
+                  font-family: 'DM Mono', monospace;
                   font-size: 11px;
                   display: none;
                 "
@@ -396,13 +415,13 @@
           </section>
 
           <footer class="main-footer">
+            <p>© 2026 Jaime Gerolao III. All rights reserved.</p>
             <a href="#about">Back to top ↑</a>
           </footer>
         </main>
       </div>
     </div>
 
-    <!-- External JavaScript -->
-    <script src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>

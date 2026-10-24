@@ -37,11 +37,10 @@ document.querySelector("#theme-btn")?.addEventListener("click", () => {
   updateTheme();
 });
 
-/* === Resume PDF Generator Trigger === */
+/* === One-Pager Print / Download PDF Resume Trigger === */
 const printResumeBtn = document.getElementById("print-resume-btn");
 if (printResumeBtn) {
   printResumeBtn.addEventListener("click", () => {
-    // Triggers native browser print dialog styled via @media print in style.css
     window.print();
   });
 }

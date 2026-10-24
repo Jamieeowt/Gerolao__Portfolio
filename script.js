@@ -18,7 +18,6 @@ try {
     ease: 'easeInOutQuad',
   });
 } catch (e) {
-  // SVG morph animation initialization failure
   console.error("Anime.js animation failed to initialize:", e);
 }
 
@@ -86,7 +85,6 @@ contactForm?.addEventListener("submit", async (e) => {
       formStatus.style.display = "block";
     }
   } catch (error) {
-    // Network or server communication error
     formStatus.textContent =
       "Network error. Please try again later or email me directly.";
     formStatus.style.color = "#ef4444";
@@ -162,4 +160,4 @@ if (canvas) {
   animateDots();
 }
 
-updateTheme();  
+updateTheme();

@@ -624,9 +624,9 @@ h1 em {
 }
 
 .resume-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
   gap: 24px;
   border-bottom: 2px solid #0b0b0b;
   padding-bottom: 16px;
@@ -634,12 +634,12 @@ h1 em {
 }
 
 .resume-profile-pic-wrap {
-  width: 104px;
-  height: 104px;
-  min-width: 104px;
-  min-height: 104px;
-  flex-shrink: 0;
-  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  min-width: 120px;
+  min-height: 120px;
+  flex-shrink: 0 !important;
+  border-radius: 4px;
   overflow: hidden;
   border: 2px solid #0b0b0b;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
@@ -648,7 +648,7 @@ h1 em {
 .resume-profile-pic {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  border-radius: 0;
   object-fit: cover;
   object-position: center;
 }
@@ -662,10 +662,10 @@ h1 em {
 }
 
 .resume-title {
-  font-size: 26px;
+  font-size: 29px;
   font-weight: 800;
   letter-spacing: -0.02em;
-  line-height: 1.15;
+  line-height: 1.1;
   color: #0b0b0b;
   margin: 0;
   word-break: break-word;
@@ -673,26 +673,23 @@ h1 em {
 
 .resume-subtitle {
   color: #444;
-  font-size: 13px;
+  font-size: 13.5px;
   font-weight: 500;
-  margin: 4px 0 8px;
+  margin: 5px 0 8px;
 }
 
 .resume-header-contacts {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 16px;
-  row-gap: 6px;
+  flex-direction: column;
+  gap: 4px;
   font-size: 12px;
   color: #222;
-  word-break: break-word;
 }
 
 .contact-item {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  max-width: 100%;
+  gap: 8px;
   word-break: break-word;
   overflow-wrap: anywhere;
 }
@@ -700,6 +697,8 @@ h1 em {
 .contact-item i {
   color: #0b0b0b;
   font-size: 12px;
+  width: 14px;
+  text-align: center;
   flex-shrink: 0;
 }
 
@@ -1159,9 +1158,6 @@ html[data-theme="dark"] nav a:hover {
   color: #fff;
 }
 
-/* =========================================================
-   STRICT ONE-PAGE PRINT RULES (@media print)
-   ========================================================= */
 @page {
   size: A4 portrait;
   margin: 5mm 8mm;
@@ -1208,7 +1204,7 @@ html[data-theme="dark"] nav a:hover {
     max-width: 100% !important;
     page-break-inside: avoid !important;
     break-inside: avoid !important;
-    font-size: 11.5px !important;
+    font-size: 11px !important;
   }
 
   .resume-header {
@@ -1216,10 +1212,10 @@ html[data-theme="dark"] nav a:hover {
     flex-direction: row !important;
     align-items: center !important;
     flex-wrap: nowrap !important;
-    gap: 20px !important;
+    gap: 18px !important;
     border-bottom: 2px solid #000 !important;
-    padding-bottom: 10px !important;
-    margin-bottom: 10px !important;
+    padding-bottom: 8px !important;
+    margin-bottom: 8px !important;
   }
 
   .resume-profile-pic-wrap {
@@ -1230,8 +1226,8 @@ html[data-theme="dark"] nav a:hover {
     max-width: 2in !important;
     max-height: 2in !important;
     flex-shrink: 0 !important;
-    border-radius: 50% !important;
-    border: 2px solid #000 !important;
+    border-radius: 0 !important;
+    border: 1.5px solid #000 !important;
     box-shadow: none !important;
     overflow: hidden !important;
   }
@@ -1239,7 +1235,7 @@ html[data-theme="dark"] nav a:hover {
   .resume-profile-pic {
     width: 100% !important;
     height: 100% !important;
-    border-radius: 50% !important;
+    border-radius: 0 !important;
     object-fit: cover !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
@@ -1251,7 +1247,7 @@ html[data-theme="dark"] nav a:hover {
   }
 
   .resume-title {
-    font-size: 22px !important;
+    font-size: 23px !important;
     font-weight: 800 !important;
     color: #000 !important;
     line-height: 1.1 !important;
@@ -1259,20 +1255,27 @@ html[data-theme="dark"] nav a:hover {
   }
 
   .resume-subtitle {
-    font-size: 12px !important;
+    font-size: 11.5px !important;
     color: #222 !important;
-    margin: 3px 0 6px !important;
+    margin: 2px 0 5px !important;
   }
 
   .resume-header-contacts {
-    font-size: 10.5px !important;
-    column-gap: 14px !important;
-    row-gap: 4px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2.5px !important;
+    font-size: 9.5px !important;
     color: #000 !important;
+  }
+
+  .contact-item {
+    gap: 6px !important;
   }
 
   .contact-item i {
     color: #000 !important;
+    font-size: 9.5px !important;
+    width: 12px !important;
   }
 
   .resume-grid-onepage {
@@ -1280,29 +1283,29 @@ html[data-theme="dark"] nav a:hover {
   }
 
   .resume-section-item {
-    margin-bottom: 7px !important;
+    margin-bottom: 6px !important;
   }
 
   .resume-sec-title {
-    font-size: 11px !important;
+    font-size: 10.5px !important;
     border-bottom: 1px solid #000 !important;
-    padding-bottom: 2px !important;
-    margin-bottom: 4px !important;
+    padding-bottom: 1.5px !important;
+    margin-bottom: 3.5px !important;
     color: #000 !important;
   }
 
   .entry-row {
-    font-size: 11px !important;
+    font-size: 10.5px !important;
   }
 
   .entry-date {
-    font-size: 10px !important;
+    font-size: 9.5px !important;
   }
 
   .entry-role,
   .entry-desc,
   .resume-tight-list {
-    font-size: 10.5px !important;
+    font-size: 10px !important;
     color: #222 !important;
     line-height: 1.25 !important;
   }
@@ -1311,16 +1314,13 @@ html[data-theme="dark"] nav a:hover {
     background: #e5e5e5 !important;
     color: #000 !important;
     border: 1px solid #888 !important;
-    font-size: 9.5px !important;
-    padding: 1.5px 5px !important;
+    font-size: 9px !important;
+    padding: 1px 4px !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
 }
 
-/* =========================================================
-   RESPONSIVE / MOBILE SCREENS FIXES
-   ========================================================= */
 @media (max-width: 860px) {
   #line-particles {
     display: none;
@@ -1370,16 +1370,16 @@ html[data-theme="dark"] nav a:hover {
     border-radius: 6px;
   }
   .resume-header {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column !important;
+    align-items: center !important;
     text-align: center;
     gap: 16px;
   }
   .resume-profile-pic-wrap {
-    width: 90px;
-    height: 90px;
-    min-width: 90px;
-    min-height: 90px;
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    min-height: 100px;
   }
   .resume-header-info {
     width: 100%;
@@ -1387,10 +1387,7 @@ html[data-theme="dark"] nav a:hover {
     text-align: center;
   }
   .resume-header-contacts {
-    justify-content: center;
-    flex-direction: column;
     align-items: center;
-    gap: 6px;
   }
   .contact-item {
     justify-content: center;
@@ -1401,4 +1398,4 @@ html[data-theme="dark"] nav a:hover {
     align-items: flex-start;
     gap: 2px;
   }
-}
+} 

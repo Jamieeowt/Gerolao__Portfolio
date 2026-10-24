@@ -1,6 +1,5 @@
 import { animate } from 'https://esm.sh/animejs@4.5.0';
 
-/* === Anime.js SVG Distortion & Shape Morphing === */
 try {
   animate(['feTurbulence', 'feDisplacementMap'], {
     baseFrequency: 0.05,
@@ -19,10 +18,10 @@ try {
     ease: 'easeInOutQuad',
   });
 } catch (e) {
+  // SVG morph animation initialization failure
   console.error("Anime.js animation failed to initialize:", e);
 }
 
-/* === Theme Switcher with Persistence === */
 let isDark = localStorage.getItem("portfolio-theme") === "dark";
 
 function updateTheme() {
@@ -37,7 +36,6 @@ document.querySelector("#theme-btn")?.addEventListener("click", () => {
   updateTheme();
 });
 
-/* === One-Pager Print / Download PDF Resume Trigger === */
 const printResumeBtn = document.getElementById("print-resume-btn");
 if (printResumeBtn) {
   printResumeBtn.addEventListener("click", () => {
@@ -45,7 +43,6 @@ if (printResumeBtn) {
   });
 }
 
-/* === Contact Form Handling === */
 const contactForm = document.querySelector("#contact-form");
 const submitBtn = document.querySelector("#submit-btn");
 const formStatus = document.querySelector("#form-status");
@@ -89,6 +86,7 @@ contactForm?.addEventListener("submit", async (e) => {
       formStatus.style.display = "block";
     }
   } catch (error) {
+    // Network or server communication error
     formStatus.textContent =
       "Network error. Please try again later or email me directly.";
     formStatus.style.color = "#ef4444";
@@ -99,7 +97,6 @@ contactForm?.addEventListener("submit", async (e) => {
   }
 });
 
-/* === Wandering Dots Particle Animation === */
 const canvas = document.getElementById("line-particles");
 if (canvas) {
   const ctx = canvas.getContext("2d");
@@ -165,5 +162,4 @@ if (canvas) {
   animateDots();
 }
 
-// Initial theme load
-updateTheme();
+updateTheme();  

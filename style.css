@@ -1135,17 +1135,19 @@ html[data-theme="dark"] nav a:hover {
   color: #fff;
 }
 
-/* Strict One-Page Print Rules (@media print) */
+/* =========================================================
+   STRICT ONE-PAGE PRINT RULES (@media print)
+   ========================================================= */
 @page {
   size: A4 portrait;
-  margin: 7mm;
+  margin: 6mm 8mm;
 }
 
 @media print {
   body {
     background: #fff !important;
     color: #000 !important;
-    font-size: 10px !important;
+    font-size: 9.5px !important;
   }
 
   .sidebar,
@@ -1186,17 +1188,25 @@ html[data-theme="dark"] nav a:hover {
   .resume-header {
     border-bottom: 1.5px solid #000 !important;
     padding-bottom: 8px !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 8px !important;
     gap: 16px !important;
   }
 
+  /* Exact physical 2x2 inch photograph on print/PDF */
   .resume-profile-pic-wrap {
-    width: 82px !important;
-    height: 82px !important;
-    border: 1.5px solid #000 !important;
+    width: 2in !important;
+    height: 2in !important;
+    min-width: 2in !important;
+    min-height: 2in !important;
+    border-radius: 4px !important;
+    border: 1px solid #000 !important;
+    box-shadow: none !important;
   }
 
   .resume-profile-pic {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
@@ -1207,50 +1217,51 @@ html[data-theme="dark"] nav a:hover {
   }
 
   .resume-subtitle {
-    font-size: 10.5px !important;
+    font-size: 10px !important;
     color: #333 !important;
   }
 
   .resume-header-contacts {
-    font-size: 8.5px !important;
+    font-size: 8px !important;
     gap: 8px !important;
     color: #111 !important;
+    margin-top: 4px !important;
   }
 
   .resume-grid-onepage {
-    gap: 16px !important;
+    gap: 14px !important;
   }
 
   .resume-section-item {
-    margin-bottom: 8px !important;
+    margin-bottom: 6px !important;
   }
 
   .resume-sec-title {
-    font-size: 9.5px !important;
+    font-size: 9px !important;
     border-bottom: 1px solid #000 !important;
-    padding-bottom: 2px !important;
-    margin-bottom: 4px !important;
+    padding-bottom: 1px !important;
+    margin-bottom: 3px !important;
     color: #000 !important;
   }
 
   .entry-row {
-    font-size: 9.5px !important;
+    font-size: 9px !important;
   }
 
   .entry-role,
   .entry-desc,
   .resume-tight-list {
-    font-size: 8.5px !important;
+    font-size: 8px !important;
     color: #222 !important;
-    line-height: 1.3 !important;
+    line-height: 1.25 !important;
   }
 
   .resume-tag-wrap span {
     background: #e5e5e5 !important;
     color: #000 !important;
     border: 1px solid #999 !important;
-    font-size: 8px !important;
-    padding: 1.5px 4.5px !important;
+    font-size: 7.5px !important;
+    padding: 1px 4px !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }

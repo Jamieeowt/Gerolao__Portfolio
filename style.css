@@ -122,7 +122,7 @@ nav a {
   align-items: center;
   gap: 14px;
   border-top: 1px solid #ededeb;
-  padding: 13px 0;
+  padding: 11px 0;
   color: #696969;
   font-size: 13px;
   transition:
@@ -238,7 +238,6 @@ main {
   text-transform: uppercase;
 }
 
-/* Flex layout placing the large morphing SVG beside headline */
 .hero-headline-wrap {
   display: flex;
   align-items: center;
@@ -357,7 +356,7 @@ h1 em {
 }
 
 .section-heading {
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 }
 
 .section-kicker {
@@ -384,7 +383,7 @@ h1 em {
 .skills-panel {
   border: 1px solid #dededb;
   border-radius: 8px;
-  padding: 32px;
+  padding: 28px;
   background: #fafaf8;
 }
 
@@ -396,21 +395,44 @@ h1 em {
 }
 
 .education-card h3 {
-  font-size: 22px;
-  margin: 12px 0 8px;
+  font-size: 20px;
+  margin: 10px 0 6px;
   letter-spacing: -0.02em;
 }
 
 .institution {
-  color: #666;
+  color: #444;
   font-size: 14px;
+  font-weight: 500;
+}
+
+.institution-sub {
+  color: #777;
+  font-size: 13px;
+  margin-top: 4px;
 }
 
 .education-card .date {
-  margin-top: 24px;
+  margin-top: 18px;
   font-family: "DM Mono", monospace;
   font-size: 11px;
   color: #888;
+}
+
+.activity-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 13px;
+  color: #333;
+}
+
+.activity-list .badge {
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  color: #888;
+  display: block;
 }
 
 .skill-group {
@@ -449,6 +471,164 @@ h1 em {
   color: #111;
 }
 
+/* Achievements Grid */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid #dededb;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.achievement-item i {
+  font-size: 20px;
+  color: #10b981;
+  margin-top: 3px;
+}
+
+.achievement-item h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.achievement-item p {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Resume Viewer & Generator */
+.resume-actions-bar {
+  margin-bottom: 24px;
+  display: flex;
+  gap: 12px;
+}
+
+.resume-paper {
+  background: #fff;
+  border: 1px solid #dededb;
+  border-radius: 8px;
+  padding: 48px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 2px solid #0b0b0b;
+  padding-bottom: 24px;
+  margin-bottom: 32px;
+}
+
+.resume-title {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.resume-subtitle {
+  color: #666;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.resume-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12px;
+  color: #444;
+  text-align: right;
+}
+
+.resume-contact-info i {
+  color: #777;
+  width: 14px;
+  margin-right: 4px;
+}
+
+.resume-body-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+}
+
+.resume-block {
+  margin-bottom: 28px;
+}
+
+.resume-block h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "DM Mono", monospace;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 6px;
+  margin-bottom: 14px;
+  color: #0b0b0b;
+}
+
+.resume-entry {
+  margin-bottom: 14px;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+.entry-header span {
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  color: #777;
+}
+
+.resume-entry p {
+  font-size: 12px;
+  color: #666;
+}
+
+.resume-list,
+.resume-bullet-list {
+  list-style-position: inside;
+  font-size: 12px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.resume-pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+}
+
+.resume-pill-list li {
+  background: #f1f1ee;
+  border: 1px solid #dededb;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 11px;
+}
+
+.resume-skills-text {
+  font-size: 12px;
+  color: #444;
+  font-family: "DM Mono", monospace;
+}
+
+/* Certificate Styles */
 .certificate-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -489,7 +669,6 @@ h1 em {
   color: #777;
 }
 
-/* Edge-to-edge circular logo container */
 .certificate-mark {
   width: 80px;
   height: 80px;
@@ -548,6 +727,7 @@ h1 em {
   color: #888;
 }
 
+/* Contact Section */
 .contact-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -669,9 +849,50 @@ html[data-theme="dark"] .main-footer {
 html[data-theme="dark"] .muted-section,
 html[data-theme="dark"] .education-card,
 html[data-theme="dark"] .skills-panel,
+html[data-theme="dark"] .achievement-item,
 html[data-theme="dark"] .certificate-card {
   background: #1c1c1c;
   border-color: #2b2b2b;
+}
+
+html[data-theme="dark"] .achievement-item h4 {
+  color: #f4f4f2;
+}
+
+html[data-theme="dark"] .achievement-item p,
+html[data-theme="dark"] .institution-sub,
+html[data-theme="dark"] .activity-list {
+  color: #aaa;
+}
+
+html[data-theme="dark"] .resume-paper {
+  background: #181818;
+  border-color: #2e2e2e;
+  color: #f4f4f2;
+}
+
+html[data-theme="dark"] .resume-header {
+  border-bottom-color: #f4f4f2;
+}
+
+html[data-theme="dark"] .resume-subtitle,
+html[data-theme="dark"] .resume-contact-info,
+html[data-theme="dark"] .resume-entry p,
+html[data-theme="dark"] .resume-list,
+html[data-theme="dark"] .resume-bullet-list,
+html[data-theme="dark"] .resume-skills-text {
+  color: #b0b0b0;
+}
+
+html[data-theme="dark"] .resume-block h3 {
+  border-bottom-color: #333;
+  color: #f4f4f2;
+}
+
+html[data-theme="dark"] .resume-pill-list li {
+  background: #252525;
+  border-color: #383838;
+  color: #ddd;
 }
 
 html[data-theme="dark"] .certificate-preview {
@@ -732,6 +953,68 @@ html[data-theme="dark"] nav a:hover {
   color: #fff;
 }
 
+/* Print Rules for Resume Generator */
+@media print {
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  .sidebar,
+  #line-particles,
+  .hero,
+  #education,
+  #achievements,
+  #certificates,
+  #contact,
+  .main-footer,
+  .resume-actions-bar,
+  .section-heading {
+    display: none !important;
+  }
+
+  main {
+    margin-left: 0 !important;
+  }
+
+  #resume-section {
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  .resume-paper {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    color: #000 !important;
+    background: #fff !important;
+  }
+
+  .resume-header {
+    border-bottom: 2px solid #000 !important;
+  }
+
+  .resume-block h3 {
+    border-bottom: 1px solid #bbb !important;
+    color: #000 !important;
+  }
+
+  .resume-subtitle,
+  .resume-contact-info,
+  .resume-entry p,
+  .resume-list,
+  .resume-bullet-list,
+  .resume-skills-text {
+    color: #333 !important;
+  }
+
+  .resume-pill-list li {
+    background: #eee !important;
+    border: 1px solid #ccc !important;
+    color: #000 !important;
+  }
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 860px) {
   #line-particles {
@@ -755,8 +1038,16 @@ html[data-theme="dark"] nav a:hover {
     height: 150px;
   }
   .education-grid,
-  .contact-section {
+  .contact-section,
+  .resume-body-grid {
     grid-template-columns: 1fr;
+  }
+  .resume-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .resume-contact-info {
+    text-align: left;
   }
   .hero {
     padding: 30px 24px;

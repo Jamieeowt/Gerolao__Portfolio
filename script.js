@@ -37,6 +37,15 @@ document.querySelector("#theme-btn")?.addEventListener("click", () => {
   updateTheme();
 });
 
+/* === Resume PDF Generator Trigger === */
+const printResumeBtn = document.getElementById("print-resume-btn");
+if (printResumeBtn) {
+  printResumeBtn.addEventListener("click", () => {
+    // Triggers native browser print dialog styled via @media print in style.css
+    window.print();
+  });
+}
+
 /* === Contact Form Handling === */
 const contactForm = document.querySelector("#contact-form");
 const submitBtn = document.querySelector("#submit-btn");

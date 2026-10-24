@@ -1,5 +1,6 @@
 import { animate } from 'https://esm.sh/animejs@4.5.0';
 
+/* === Anime.js SVG Distortion & Shape Morphing === */
 try {
   animate(['feTurbulence', 'feDisplacementMap'], {
     baseFrequency: 0.05,

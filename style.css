@@ -227,7 +227,7 @@ main {
 }
 
 .hero-content {
-  max-width: 860px;
+  max-width: 900px;
   padding: 60px 0;
 }
 
@@ -238,11 +238,12 @@ main {
   text-transform: uppercase;
 }
 
-/* Flex wrapper placing the animated SVG beside the text */
+/* Flex layout placing the large morphing SVG beside headline */
 .hero-headline-wrap {
   display: flex;
   align-items: center;
-  gap: 28px;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 h1 {
@@ -261,9 +262,18 @@ h1 em {
 
 .hero-morph-art {
   flex-shrink: 0;
+  width: 220px;
+  height: 220px;
   color: #0b0b0b;
   display: grid;
   place-items: center;
+  overflow: visible;
+}
+
+.hero-morph-art svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
 }
 
 .hero-morph-art polygon {
@@ -479,6 +489,7 @@ h1 em {
   color: #777;
 }
 
+/* Edge-to-edge circular logo container */
 .certificate-mark {
   width: 80px;
   height: 80px;
@@ -645,7 +656,7 @@ html[data-theme="dark"] .hero {
 }
 
 html[data-theme="dark"] .hero-morph-art {
-  color: #f4f4f2; /* Adapts SVG fill to white in dark mode */
+  color: #f4f4f2;
 }
 
 html[data-theme="dark"] .sidebar,
@@ -721,7 +732,7 @@ html[data-theme="dark"] nav a:hover {
   color: #fff;
 }
 
-/* Responsive adjustments */
+/* Responsive Breakpoints */
 @media (max-width: 860px) {
   #line-particles {
     display: none;
@@ -735,9 +746,13 @@ html[data-theme="dark"] nav a:hover {
     margin-left: 0;
   }
   .hero-headline-wrap {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: flex-start;
-    gap: 16px;
+    gap: 20px;
+  }
+  .hero-morph-art {
+    width: 150px;
+    height: 150px;
   }
   .education-grid,
   .contact-section {

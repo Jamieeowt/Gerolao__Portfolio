@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gerolao Jaime Jr | Portfolio & Resume</title>
+    <title>Gerolao, Jaime Jr 111 | Portfolio & Resume</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +16,6 @@
       rel="stylesheet"
     />
 
-    <!-- Linked External Stylesheet -->
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -24,26 +23,27 @@
       <div class="site-shell">
         <aside class="sidebar">
           <div>
-            <a class="brand" href="#about">GJ<span>JR</span></a>
+            <a class="brand" href="#about">GJ<span>111</span></a>
             <div class="profile">
               <div class="avatar-wrap">
                 <img
-                  src="./profile/Jamie.png"
-                  alt="Gerolao Jaime Jr"
+                  src="./profile.jpg"
+                  alt="Gerolao, Jaime Jr 111"
                   class="avatar-img"
                   onerror="this.src = './Jamie.png'"
                 />
               </div>
-              <p class="profile-name">Gerolao Jaime Jr</p>
+              <p class="profile-name">Gerolao, Jaime Jr 111</p>
               <p class="profile-role">Web Developer & BSIT Student</p>
             </div>
             <nav aria-label="Main navigation">
               <a href="#about"><span>01</span>About me</a>
-              <a href="#education"><span>02</span>Education & Experience</a>
-              <a href="#achievements"><span>03</span>Achievements</a>
-              <a href="#resume-section"><span>04</span>One-Page Resume</a>
-              <a href="#certificates"><span>05</span>Certificates</a>
-              <a href="#contact"><span>06</span>Contact</a>
+              <a href="#projects"><span>02</span>Curriculum Projects</a>
+              <a href="#education"><span>03</span>Education & Experience</a>
+              <a href="#achievements"><span>04</span>Achievements</a>
+              <a href="#resume-section"><span>05</span>One-Page Resume</a>
+              <a href="#certificates"><span>06</span>Certificates</a>
+              <a href="#contact"><span>07</span>Contact</a>
             </nav>
           </div>
 
@@ -81,7 +81,7 @@
           </div>
         </aside>
 
-        <!-- Canvas for the wandering dots animation along the divider line -->
+        <!-- Particle canvas along the sidebar edge -->
         <canvas id="line-particles"></canvas>
 
         <main>
@@ -124,57 +124,151 @@
               </div>
 
               <p class="hero-copy">
-                BSIT Student at Polytechnic University of the Philippines, Quezon City. Passionate about software engineering, web development, cloud computing, and developer community leadership.
+                BSIT student at Polytechnic University of the Philippines, Quezon City[cite: 11]. Passionate about software engineering, frontend engineering, network architecture, and collaborative developer initiatives[cite: 12].
               </p>
               <div class="hero-actions">
-                <a class="button button-dark" href="#resume-section">View & Download Resume</a>
-                <a class="button button-light" href="#contact">Get in touch</a>
+                <a class="button button-dark" href="#projects">Explore Projects</a>
+                <a class="button button-light" href="#resume-section">View Resume</a>
               </div>
             </div>
             <div class="quick-facts">
-              <div><span>Based in</span><strong>Quezon City, PH</strong></div>
-              <div><span>Current Degree</span><strong>BSIT (PUP QC)</strong></div>
-              <div><span>Leadership</span><strong>IBITS 19, PUP MSC, GDG & AWSCC</strong></div>
+              <div><span>Based in</span><strong>Quezon City, PH</strong>[cite: 11]</div>
+              <div><span>Current Degree</span><strong>BSIT (PUP QC)</strong>[cite: 11]</div>
+              <div><span>Leadership</span><strong>IBITS 19, PUP MSC, GDG & AWSCC</strong>[cite: 12]</div>
+            </div>
+          </section>
+
+          <!-- CURRICULUM PROJECTS SECTION -->
+          <section class="content-section" id="projects">
+            <div class="section-heading">
+              <div class="section-kicker">
+                <span>01</span><span>Coursework & Engineering</span>
+              </div>
+              <h2>Curriculum Projects</h2>
+              <p style="color: #666; margin-top: 8px;">Key academic deliverables built across programming, networking, data analysis, and HCI.</p>
+            </div>
+
+            <div class="projects-grid">
+              <!-- OOP Portfolio Project -->
+              <article class="project-card">
+                <div class="project-card-header">
+                  <span class="project-category">Object-Oriented Programming</span>
+                  <a href="https://gremlynscrypt.vercel.app/" target="_blank" rel="noreferrer" class="project-link" aria-label="Visit Gremlyns Crypt">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+                <h3>Gremlyns Crypt — OOP Portfolio</h3>
+                <p>An interactive portfolio application demonstrating object-oriented programming principles, modern web modularity, and deployment.</p>
+                <div class="project-tags">
+                  <span>OOP</span>
+                  <span>Web App</span>
+                  <span>Vercel</span>
+                </div>
+                <a href="https://gremlynscrypt.vercel.app/" target="_blank" rel="noreferrer" class="project-btn">
+                  Launch Project <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </article>
+
+              <!-- HCI Prototype -->
+              <article class="project-card">
+                <div class="project-card-header">
+                  <span class="project-category">Human-Computer Interaction</span>
+                  <a href="https://www.figma.com/proto/hRcsFfPwVJTt0d1BNx2rz1/FINDR?node-id=1690-8951&p=f&t=OPuDCzBsa3yyPaQK-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=6%3A2&show-proto-sidebar=1" target="_blank" rel="noreferrer" class="project-link" aria-label="View FINDR Prototype">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+                <h3>FINDR — Web App Prototype</h3>
+                <p>An end-to-end interactive UI/UX prototype created in Figma, engineered with a focus on user experience research, accessibility, and design consistency.</p>
+                <div class="project-tags">
+                  <span>HCI</span>
+                  <span>Figma</span>
+                  <span>UI/UX</span>
+                  <span>Prototype</span>
+                </div>
+                <a href="https://www.figma.com/proto/hRcsFfPwVJTt0d1BNx2rz1/FINDR?node-id=1690-8951&p=f&t=OPuDCzBsa3yyPaQK-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=6%3A2&show-proto-sidebar=1" target="_blank" rel="noreferrer" class="project-btn">
+                  View Prototype <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </article>
+
+              <!-- Network Administration -->
+              <article class="project-card">
+                <div class="project-card-header">
+                  <span class="project-category">Network Administration</span>
+                  <a href="https://canva.link/1nsl53elmf9hx8e" target="_blank" rel="noreferrer" class="project-link" aria-label="View Campus Network Deck">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+                <h3>University Campus Network Architecture</h3>
+                <p>A comprehensive architectural blueprint detailing topology design, subnetting, switch configurations, and secure network infrastructure for a university campus.</p>
+                <div class="project-tags">
+                  <span>Networking</span>
+                  <span>Subnetting</span>
+                  <span>Topology</span>
+                </div>
+                <a href="https://canva.link/1nsl53elmf9hx8e" target="_blank" rel="noreferrer" class="project-btn">
+                  View Case Study <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </article>
+
+              <!-- IPT 1 Data Analysis -->
+              <article class="project-card">
+                <div class="project-card-header">
+                  <span class="project-category">Integrative Programming & Tech 1</span>
+                  <a href="https://canva.link/qgb6bgg5umnc7z1" target="_blank" rel="noreferrer" class="project-link" aria-label="View Data Analysis Project">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+                <h3>IPT 1: Exploratory Data Analysis</h3>
+                <p>Structured data manipulation, analysis, and visualization project examining dataset trends and practical statistical conclusions.</p>
+                <div class="project-tags">
+                  <span>Data Analysis</span>
+                  <span>IPT 1</span>
+                  <span>Visualization</span>
+                </div>
+                <a href="https://canva.link/qgb6bgg5umnc7z1" target="_blank" rel="noreferrer" class="project-btn">
+                  View Presentation <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </article>
             </div>
           </section>
 
           <!-- EDUCATION & INVOLVEMENT SECTION -->
-          <section class="content-section" id="education">
+          <section class="content-section muted-section" id="education">
             <div class="section-heading">
               <div class="section-kicker">
-                <span>01</span><span>Education & Background</span>
+                <span>02</span><span>Education & Background</span>
               </div>
-              <h2>Academic milestones and real-world work.</h2>
+              <h2>Academic milestones and real-world experience.</h2>
             </div>
             
             <div class="education-grid">
               <article class="education-card">
                 <p class="meta">College Degree</p>
                 <h3>Bachelor of Science in Information Technology</h3>
-                <p class="institution">Polytechnic University of the Philippines, Quezon City</p>
-                <div class="date">Aug 2024 — Present</div>
+                <p class="institution">Polytechnic University of the Philippines, Quezon City</p>[cite: 11]
+                <div class="date">Aug 2024 — Present</div>[cite: 11]
               </article>
 
               <article class="education-card">
-                <p class="meta">Senior & Junior High School</p>
+                <p class="meta">High School</p>
                 <h3>High School Diploma</h3>
-                <p class="institution">Batasan Hills National High School</p>
-                <div class="date">2018 — 2024</div>
+                <p class="institution">Batasan Hills National High School</p>[cite: 11]
+                <div class="date">2018 — 2024</div>[cite: 11]
               </article>
 
               <article class="education-card">
-                <p class="meta">Primary Education</p>
+                <p class="meta">Elementary</p>
                 <h3>Elementary School Diploma</h3>
-                <p class="institution">San Diego Elementary School</p>
-                <div class="date">2010 — 2018</div>
+                <p class="institution">San Diego Elementary School</p>[cite: 11]
+                <div class="date">2010 — 2018</div>[cite: 11]
               </article>
 
               <article class="education-card">
                 <p class="meta">Work Experience</p>
                 <h3>Service Crew</h3>
-                <p class="institution">McDonald's, Quezon City</p>
-                <p class="institution-sub">Special Program for Employment of Students (SPES)</p>
-                <div class="date">Oct 2024 — Dec 2024</div>
+                <p class="institution">McDonald's, Quezon City</p>[cite: 11]
+                <p class="institution-sub">Special Program for Employment of Students (SPES)</p>[cite: 11]
+                <div class="date">Oct 2024 — Dec 2024</div>[cite: 11]
               </article>
             </div>
 
@@ -183,7 +277,7 @@
               <div class="section-kicker">
                 <span>Involvement</span><span>Extracurricular & Leadership</span>
               </div>
-              <h3>Leadership, community service, and tech organizations.</h3>
+              <h3>Leadership, community service, and student chapters.</h3>
             </div>
 
             <div class="education-grid">
@@ -191,11 +285,11 @@
                 <div class="skill-group">
                   <p>Organizations & Leadership (2025)</p>
                   <ul class="activity-list">
-                    <li><strong>Deputy Head – Education & Training</strong> — IBITS 19 (Institute of Bachelors in Information Technology Studies) <span class="badge">2025</span></li>
-                    <li><strong>Leadership Development Dept</strong> — PUP Microsoft Student Community (PUP MSC) <span class="badge">2025</span></li>
-                    <li><strong>DataCamp Scholar</strong> — Data Science & Analytics Track <span class="badge">2025</span></li>
-                    <li><strong>GDG PUP Web Dev Cadet</strong> — Google Developer Groups on Campus PUP <span class="badge">2025</span></li>
-                    <li><strong>AWSCC Ops Committee – Usher</strong> — AWS Cloud Club PUP <span class="badge">2025</span></li>
+                    <li><strong>Deputy Head – Education & Training</strong> — IBITS 19 (Institute of Bachelors in Information Technology Studies) <span class="badge">2025</span></li>[cite: 12]
+                    <li><strong>Leadership Development Dept</strong> — PUP Microsoft Student Community (PUP MSC) <span class="badge">2025</span></li>[cite: 12]
+                    <li><strong>DataCamp Scholar</strong> — Data Science & Analytics Track <span class="badge">2025</span></li>[cite: 12]
+                    <li><strong>GDG PUP Web Dev Cadet</strong> — Google Developer Groups on Campus PUP <span class="badge">2025</span></li>[cite: 12]
+                    <li><strong>AWSCC Ops Committee – Usher</strong> — AWS Cloud Club PUP <span class="badge">2025</span></li>[cite: 12]
                   </ul>
                 </div>
               </div>
@@ -204,14 +298,14 @@
                 <div class="skill-group">
                   <p>Core Competencies</p>
                   <div class="pills">
-                    <span>Creativity</span>
-                    <span>Collaborative Research</span>
-                    <span>Data Sharing & Management</span>
-                    <span>Interdisciplinary Studies</span>
-                    <span>Technology Integration</span>
-                    <span>Open Science Initiatives</span>
-                    <span>Networked Research Methods</span>
-                    <span>Cross-disciplinary Communication</span>
+                    <span>Creativity</span>[cite: 11]
+                    <span>Collaborative Research</span>[cite: 11]
+                    <span>Data Sharing & Management</span>[cite: 11]
+                    <span>Interdisciplinary Studies</span>[cite: 11]
+                    <span>Technology Integration</span>[cite: 11]
+                    <span>Open Science Initiatives</span>[cite: 11]
+                    <span>Networked Research Methods</span>[cite: 11]
+                    <span>Cross-disciplinary Communication</span>[cite: 11]
                   </div>
                 </div>
                 <div class="skill-group" style="margin-top: 20px;">
@@ -224,98 +318,106 @@
             </div>
           </section>
 
-          <!-- ACHIEVEMENTS SECTION (BLACK ICONS) -->
-          <section class="content-section muted-section" id="achievements">
+          <!-- ACHIEVEMENTS SECTION -->
+          <section class="content-section" id="achievements">
             <div class="section-heading">
               <div class="section-kicker">
-                <span>02</span><span>Honors & Recognitions</span>
+                <span>03</span><span>Honors & Recognitions</span>
               </div>
               <h2>Academic Excellence & Awards</h2>
             </div>
             
             <div class="achievements-grid">
+              <div class="achievement-item highlight-card">
+                <i class="fa-solid fa-trophy"></i>
+                <div>
+                  <h4>Top 10 Finalist — SPARKFEST: GDG PUP Hackathon 2025</h4>[cite: 13]
+                  <p>Team: <strong>CTRL + ALT + ELITE</strong> | Awarded June 7, 2025 at The Globe Tower</p>[cite: 13]
+                </div>
+              </div>
+
               <div class="achievement-item">
                 <i class="fa-solid fa-award"></i>
                 <div>
-                  <h4>Academic Excellence Award – With High Honors</h4>
-                  <p>Batasan Hills National High School</p>
+                  <h4>Academic Excellence Award – With High Honors</h4>[cite: 11]
+                  <p>Batasan Hills National High School</p>[cite: 11]
                 </div>
               </div>
 
               <div class="achievement-item">
                 <i class="fa-solid fa-medal"></i>
                 <div>
-                  <h4>Academic Excellence Award – With Honors</h4>
-                  <p>Batasan Hills National High School</p>
+                  <h4>Academic Excellence Award – With Honors</h4>[cite: 11]
+                  <p>Batasan Hills National High School</p>[cite: 11]
                 </div>
               </div>
 
               <div class="achievement-item">
                 <i class="fa-solid fa-flask"></i>
                 <div>
-                  <h4>Outstanding Performance in Science (2024)</h4>
-                  <p>Batasan Hills National High School</p>
+                  <h4>Outstanding Performance in Science (2024)</h4>[cite: 11]
+                  <p>Batasan Hills National High School</p>[cite: 11]
                 </div>
               </div>
 
               <div class="achievement-item">
                 <i class="fa-solid fa-briefcase"></i>
                 <div>
-                  <h4>Outstanding Performance in Work Immersion (2024)</h4>
-                  <p>Batasan Hills National High School</p>
+                  <h4>Outstanding Performance in Work Immersion (2024)</h4>[cite: 11]
+                  <p>Batasan Hills National High School</p>[cite: 11]
                 </div>
               </div>
 
               <div class="achievement-item">
                 <i class="fa-solid fa-microscope"></i>
                 <div>
-                  <h4>Best in Research Awardee (2024)</h4>
-                  <p>Batasan Hills National High School</p>
+                  <h4>Best in Research Awardee (2024)</h4>[cite: 11]
+                  <p>Batasan Hills National High School</p>[cite: 11]
                 </div>
               </div>
 
               <div class="achievement-item">
                 <i class="fa-solid fa-palette"></i>
                 <div>
-                  <h4>1st Placer – Logo Making Contest (2024)</h4>
-                  <p>Science Month, Batasan Hills National High School</p>
+                  <h4>1st Placer – Logo Making Contest (2024)</h4>[cite: 11]
+                  <p>Science Month, Batasan Hills National High School</p>[cite: 11]
                 </div>
               </div>
 
               <div class="achievement-item">
                 <i class="fa-solid fa-camera"></i>
                 <div>
-                  <h4>1st Placer – Eyes on Photography Contest (2024)</h4>
-                  <p>Science Month, Batasan Hills National High School</p>
+                  <h4>1st Placer – Eyes on Photography Contest (2024)</h4>[cite: 11]
+                  <p>Science Month, Batasan Hills National High School</p>[cite: 11]
                 </div>
               </div>
 
               <div class="achievement-item">
                 <i class="fa-solid fa-calculator"></i>
                 <div>
-                  <h4>3rd Placer – Math Quiz Bee (2021)</h4>
-                  <p>Mathematics Month, Batasan Hills National High School</p>
+                  <h4>3rd Placer – Math Quiz Bee (2021)</h4>[cite: 11]
+                  <p>Mathematics Month, Batasan Hills National High School</p>[cite: 11]
                 </div>
               </div>
 
               <div class="achievement-item">
                 <i class="fa-solid fa-graduation-cap"></i>
                 <div>
-                  <h4>Academic Excellence Award (2010–2018)</h4>
-                  <p>San Diego Elementary School</p>
+                  <h4>Academic Excellence Award (2010–2018)</h4>[cite: 11]
+                  <p>San Diego Elementary School</p>[cite: 11]
                 </div>
               </div>
             </div>
           </section>
 
           <!-- ONE-PAGER RESUME VIEWER & GENERATOR SECTION -->
-          <section class="content-section" id="resume-section">
+          <section class="content-section muted-section" id="resume-section">
             <div class="section-heading">
               <div class="section-kicker">
-                <span>03</span><span>Resume Portal</span>
+                <span>04</span><span>Resume Portal</span>
               </div>
               <h2>Official One-Page Resume</h2>
-              <p style="color: #666; margin-top: 8px;">Formatted to fit precisely onto a single page (A4). Click the button below to generate and save or print.</p>
+              <p style="color: #666; margin-top: 8px;">Designed and calibrated to print or export on a single A4 page. Click below to launch the print-to-PDF dialog.</p>
             </div>
 
             <div class="resume-actions-bar">
@@ -326,29 +428,27 @@
 
             <!-- Single-Page Printable Resume Sheet -->
             <div class="resume-paper" id="resume-document">
-              <!-- Resume Header with Profile Photo -->
               <header class="resume-header">
                 <div class="resume-profile-pic-wrap">
                   <img
-                    src="./profile/Jamie.png"
-                    alt="Gerolao Jaime Jr"
+                    src="./profile.jpg"
+                    alt="Gerolao, Jaime Jr 111"
                     class="resume-profile-pic"
                     onerror="this.src = './Jamie.png'"
                   />
                 </div>
                 <div class="resume-header-info">
-                  <h2 class="resume-title">GEROLAO JAIME JR</h2>
+                  <h2 class="resume-title">GEROLAO, JAIME JR 111</h2>
                   <p class="resume-subtitle">BSIT Student | Aspiring Web Developer & Software Engineer</p>
                   <div class="resume-header-contacts">
-                    <span><i class="fa-solid fa-envelope"></i> gerolaojaime@gmail.com</span>
-                    <span><i class="fa-solid fa-graduation-cap"></i> jaimebgerolaojr@iskolarngbayan.pup.edu.ph</span>
-                    <span><i class="fa-solid fa-phone"></i> +63 964 761 7454</span>
-                    <span><i class="fa-solid fa-location-dot"></i> Quezon City, Philippines</span>
+                    <span><i class="fa-solid fa-envelope"></i> gerolaojaime@gmail.com</span>[cite: 11]
+                    <span><i class="fa-solid fa-graduation-cap"></i> jaimebgerolaojr@iskolarngbayan.pup.edu.ph</span>[cite: 11]
+                    <span><i class="fa-solid fa-phone"></i> +63 964 761 7454</span>[cite: 11]
+                    <span><i class="fa-solid fa-location-dot"></i> Quezon City, Philippines</span>[cite: 11]
                   </div>
                 </div>
               </header>
 
-              <!-- Two-Column Balanced One-Pager Layout -->
               <div class="resume-grid-onepage">
                 <!-- Left Column -->
                 <div class="resume-column">
@@ -356,24 +456,24 @@
                     <h3 class="resume-sec-title">Education</h3>
                     <div class="resume-entry">
                       <div class="entry-row">
-                        <strong>PUP Quezon City</strong>
-                        <span class="entry-date">Aug 2024 — Present</span>
+                        <strong>PUP Quezon City</strong>[cite: 11]
+                        <span class="entry-date">Aug 2024 — Present</span>[cite: 11]
                       </div>
-                      <p class="entry-role">BS Information Technology</p>
+                      <p class="entry-role">BS Information Technology</p>[cite: 11]
                     </div>
                     <div class="resume-entry">
                       <div class="entry-row">
-                        <strong>Batasan Hills National High School</strong>
-                        <span class="entry-date">2018 — 2024</span>
+                        <strong>Batasan Hills National High School</strong>[cite: 11]
+                        <span class="entry-date">2018 — 2024</span>[cite: 11]
                       </div>
-                      <p class="entry-role">High School Diploma (With High Honors)</p>
+                      <p class="entry-role">High School Diploma (With High Honors)</p>[cite: 11]
                     </div>
                     <div class="resume-entry">
                       <div class="entry-row">
-                        <strong>San Diego Elementary School</strong>
-                        <span class="entry-date">2010 — 2018</span>
+                        <strong>San Diego Elementary School</strong>[cite: 11]
+                        <span class="entry-date">2010 — 2018</span>[cite: 11]
                       </div>
-                      <p class="entry-role">Elementary School Diploma</p>
+                      <p class="entry-role">Elementary School Diploma</p>[cite: 11]
                     </div>
                   </section>
 
@@ -381,28 +481,50 @@
                     <h3 class="resume-sec-title">Work Experience</h3>
                     <div class="resume-entry">
                       <div class="entry-row">
-                        <strong>McDonald's, Quezon City</strong>
-                        <span class="entry-date">Oct 2024 — Dec 2024</span>
+                        <strong>McDonald's, Quezon City</strong>[cite: 11]
+                        <span class="entry-date">Oct 2024 — Dec 2024</span>[cite: 11]
                       </div>
-                      <p class="entry-role">Service Crew — SPES Program</p>
-                      <p class="entry-desc">Assisted store operations and customer service under the Special Program for Employment of Students.</p>
+                      <p class="entry-role">Service Crew — SPES Program</p>[cite: 11]
+                      <p class="entry-desc">Assisted restaurant operations and customer transactions under the Special Program for Employment of Students of Quezon City.</p>[cite: 11]
                     </div>
+                  </section>
+
+                  <section class="resume-section-item">
+                    <h3 class="resume-sec-title">Curriculum Projects</h3>
+                    <ul class="resume-tight-list">
+                      <li><strong>OOP Portfolio:</strong> Gremlyns Crypt web app deployed on Vercel</li>
+                      <li><strong>HCI Prototype:</strong> FINDR web application prototype in Figma</li>
+                      <li><strong>Network Admin:</strong> University campus network topology architecture</li>
+                      <li><strong>IPT 1:</strong> Exploratory data analysis & statistical reporting</li>
+                    </ul>
                   </section>
 
                   <section class="resume-section-item">
                     <h3 class="resume-sec-title">Extracurricular Leadership (2025)</h3>
                     <ul class="resume-tight-list">
-                      <li><strong>Deputy Head – Education & Training:</strong> IBITS 19 (2025)</li>
-                      <li><strong>Leadership Development Dept:</strong> PUP MSC (2025)</li>
-                      <li><strong>DataCamp Scholar:</strong> Data Science & Analytics (2025)</li>
-                      <li><strong>GDG PUP Web Dev Cadet:</strong> GDG on Campus (2025)</li>
-                      <li><strong>AWSCC Ops Committee – Usher:</strong> AWS Cloud Club (2025)</li>
+                      <li><strong>Deputy Head – Education & Training:</strong> IBITS 19 (2025)</li>[cite: 12]
+                      <li><strong>Leadership Development Dept:</strong> PUP MSC (2025)</li>[cite: 12]
+                      <li><strong>DataCamp Scholar:</strong> Data Science & Analytics (2025)</li>[cite: 12]
+                      <li><strong>GDG PUP Web Dev Cadet:</strong> GDG on Campus (2025)</li>[cite: 12]
+                      <li><strong>AWSCC Ops Committee – Usher:</strong> AWS Cloud Club (2025)</li>[cite: 12]
                     </ul>
                   </section>
                 </div>
 
                 <!-- Right Column -->
                 <div class="resume-column">
+                  <section class="resume-section-item">
+                    <h3 class="resume-sec-title">Hackathon Experience</h3>
+                    <div class="resume-entry">
+                      <div class="entry-row">
+                        <strong>Top 10 Finalist — SPARKFEST 2025</strong>[cite: 13]
+                        <span class="entry-date">June 2025</span>[cite: 13]
+                      </div>
+                      <p class="entry-role">GDG PUP Hackathon | Team: CTRL + ALT + ELITE</p>[cite: 13]
+                      <p class="entry-desc">Recognized for outstanding innovation, creativity, and commitment to sustainability in tech at The Globe Tower.</p>[cite: 13]
+                    </div>
+                  </section>
+
                   <section class="resume-section-item">
                     <h3 class="resume-sec-title">Technical Toolkit</h3>
                     <div class="resume-tag-wrap">
@@ -413,26 +535,24 @@
                   <section class="resume-section-item">
                     <h3 class="resume-sec-title">Core Competencies</h3>
                     <div class="resume-tag-wrap light">
-                      <span>Collaborative Research</span>
-                      <span>Technology Integration</span>
-                      <span>Data Sharing & Management</span>
-                      <span>Interdisciplinary Studies</span>
-                      <span>Cross-disciplinary Communication</span>
+                      <span>Collaborative Research</span>[cite: 11]
+                      <span>Technology Integration</span>[cite: 11]
+                      <span>Data Sharing & Management</span>[cite: 11]
+                      <span>Interdisciplinary Studies</span>[cite: 11]
+                      <span>Cross-disciplinary Communication</span>[cite: 11]
                     </div>
                   </section>
 
                   <section class="resume-section-item">
                     <h3 class="resume-sec-title">Key Honors & Achievements</h3>
                     <ul class="resume-tight-list">
-                      <li>Academic Excellence Award – With High Honors (BHNHS)</li>
-                      <li>Academic Excellence Award – With Honors (BHNHS)</li>
-                      <li>Outstanding Performance in Science (2024)</li>
-                      <li>Outstanding Performance in Work Immersion (2024)</li>
-                      <li>Best in Research Awardee (BHNHS, 2024)</li>
-                      <li>1st Place – Logo Making Contest (Science Month 2024)</li>
-                      <li>1st Place – Eyes on Photography Contest (2024)</li>
-                      <li>3rd Place – Math Quiz Bee (Mathematics Month 2021)</li>
-                      <li>Academic Excellence Award (San Diego Elementary)</li>
+                      <li>Academic Excellence Award – With High Honors (BHNHS)</li>[cite: 11]
+                      <li>Academic Excellence Award – With Honors (BHNHS)</li>[cite: 11]
+                      <li>Outstanding Performance in Science & Work Immersion (2024)</li>[cite: 11]
+                      <li>Best in Research Awardee (BHNHS, 2024)</li>[cite: 11]
+                      <li>1st Place – Logo Making & Photography Contests (2024)</li>[cite: 11]
+                      <li>3rd Place – Math Quiz Bee (Mathematics Month 2021)</li>[cite: 11]
+                      <li>Academic Excellence Award (San Diego Elementary)</li>[cite: 11]
                     </ul>
                   </section>
                 </div>
@@ -441,7 +561,7 @@
           </section>
 
           <!-- CERTIFICATES SECTION -->
-          <section class="content-section muted-section" id="certificates">
+          <section class="content-section" id="certificates">
             <div class="section-heading">
               <div class="section-kicker">
                 <span>05</span><span>Certificates</span>
@@ -622,20 +742,20 @@
               <h2>Have an opportunity in mind? Let us connect.</h2>
               <p>
                 I am open to internships, web development roles, and
-                collaborative opportunities.
+                collaborative technology opportunities.
               </p>
               <div class="contact-details">
                 <a href="mailto:gerolaojaime@gmail.com"
                   ><span><small>Personal Email</small>gerolaojaime@gmail.com</span></a
-                >
+                >[cite: 11]
                 <a href="mailto:jaimebgerolaojr@iskolarngbayan.pup.edu.ph"
                   ><span><small>Academic Email</small>jaimebgerolaojr@iskolarngbayan.pup.edu.ph</span></a
-                >
+                >[cite: 11]
                 <a href="tel:+639647617454"
                   ><span><small>Phone</small>+63 964 761 7454</span></a
-                >
+                >[cite: 11]
                 <div>
-                  <span><small>Location</small>25 Kalayaan B, Batasan Hills, QC</span>
+                  <span><small>Location</small>25 Kalayaan B, Batasan Hills, QC</span>[cite: 11]
                 </div>
               </div>
             </div>
@@ -689,14 +809,13 @@
           </section>
 
           <footer class="main-footer">
-            <p>© 2026 Gerolao Jaime Jr. All rights reserved.</p>
+            <p>© 2026 Gerolao, Jaime Jr 111. All rights reserved.</p>
             <a href="#about">Back to top ↑</a>
           </footer>
         </main>
       </div>
     </div>
 
-    <!-- Loaded as module for Anime.js imports -->
     <script type="module" src="./script.js"></script>
   </body>
 </html>
